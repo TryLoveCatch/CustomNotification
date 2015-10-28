@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:paddingRight="5dip"
+    >
+    <ImageView 
+        android:id="@+id/notification_app_update_img_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="centerInside"
+        />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_centerVertical="true"
+    	android:layout_toRightOf="@id/notification_app_update_img_icon"
+        >
+        <TextView
+             android:id="@+id/notification_app_update_txt_title"
+             style="@style/NotificationTitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=""
+             android:textSize="14dip" />
+        
+        <LinearLayout 
+            android:id="@+id/notification_app_update_lin_prg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_app_update_txt_title"
+            android:layout_marginTop="5dip"
+            >
+	        <ProgressBar
+	        	style="@style/HorizontalProgressBar"
+	            android:id="@+id/notification_app_update_prg"
+	            android:layout_width="match_parent"
+	            android:layout_height="5dip"
+	            android:max="100"
+	            />
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/notification_app_update_txt_percent"
+            style="@style/NotificationContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_app_update_lin_prg"
+            android:layout_alignRight="@id/notification_app_update_lin_prg"
+            android:layout_marginTop="2dip"
+            android:textSize="12dip"
+            android:text="0%"
+            />
+
+        <TextView
+            android:id="@+id/notification_app_update_txt_size"
+            style="@style/NotificationContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_app_update_lin_prg"
+            android:layout_alignLeft="@id/notification_app_update_lin_prg"
+            android:layout_marginTop="2dip"
+            android:textSize="12dip"
+            android:text="0"
+            />
+        
+        <TextView
+            android:id="@+id/notification_app_update_txt_install"
+            style="@style/NotificationContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_app_update_txt_title"
+            android:layout_marginTop="10dip"
+            android:textSize="12dip"
+            android:text="@string/upgrade_download_install"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

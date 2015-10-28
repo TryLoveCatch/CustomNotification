@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CustomNotification</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    
+    <string name="upgrade_download_ok">下载已完成</string>
+    <string name="upgrade_download_install">点击安装</string>
+    <string name="upgrade_download_error">下载出错了</string>
+    <string name="upgrade_download_progress">正在下载</string>
+
+</resources>
